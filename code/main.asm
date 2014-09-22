@@ -1,5 +1,7 @@
 ;-------------------------------------------------------------------------------
 ; ECE382 - Lab 2 - XOR Decrypter
+; This project takes a given ciphertext and key along with their corresponding 
+; lengths and then XORs the ciphertext and key together to reveal the plain text.
 ;	Author: 	C2C Justin Niquette
 ;	Instructor:	Capt Trimble
 ;	MCU: 		MSP430G2553
@@ -12,12 +14,6 @@
                                             ; Constants
 ;-------------------------------------------------------------------------------
 
-
-; Test Case
-ENC_TEXT:		.byte	0x4a,0x75,0x73,0x74,0x69,0x6e,0x27,0x73,0x20,0x54,0x65,0x73,0x74,0x20,0x43,0x61,0x73,0x65
-ENC_LENGTH:		.byte	18
-KEY:			.byte	0x19,0x94
-KEY_LENGTH:		.byte	2
 
 ;Required Functionality
 ;ENC_TEXT:		.byte	0xef,0xc3,0xc2,0xcb,0xde,0xcd,0xd8,0xd9,0xc0,0xcd,0xd8
